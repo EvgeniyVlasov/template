@@ -722,7 +722,7 @@ li.header__login::before {
     margin-left: 10px;
 }
 
-.foot_btm_link {
+.foot_btm_link1 {
     text-decoration: none;
     color: #666;
     display: inline;
@@ -731,4 +731,8 @@ li.header__login::before {
     right: auto;
     position: relative;
     font-size: 12px;
+}
+
+.foot_btm_link1:hover {
+    text-decoration: underline;
 }
