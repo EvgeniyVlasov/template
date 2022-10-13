@@ -318,6 +318,9 @@ li.header__login::before {
 .label_result_span {
     vertical-align: top;
     text-align: left;
+    justify-content: space-between;
+    display: flex;
+    width: 180px;
 }
 
 .spike_name2 {
@@ -330,6 +333,7 @@ li.header__login::before {
     line-height: 18px;
     margin: 0 auto 5px;
     position: relative;
+    text-align: left;
 }
 
 .spike_name2:hover {
