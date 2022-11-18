@@ -127,6 +127,10 @@
     display: flex;
 }
 
+.header_search_button {
+    
+}
+
 li.header__login::before {
     content: "•";
     display: inline-block;

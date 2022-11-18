@@ -5,7 +5,7 @@
         <title>Last.fm | Play music, find songs, and discover artists</title>
         <link rel="stylesheet" type="text/css" href="index.css" />
     </head>
-    <body class="site">
+    <body class="site" id="body">
         <header class="header">
             <div class="header__disk">
                 <img src="images/disc.png" height="60px" width="60px">
@@ -27,9 +27,13 @@
             </div>
             <div class="header__rightpart">
                 <div class="header_search">
-                    <img src="images/search_icon.png" height="40" width="32">
-                    <!-- <input type="search" class="header__input" placeholder="Search for music..."/> -->
+                    <input id="inputField"/>
+                    <button onclick="myFunc()">
+                        <img src="images/search_icon.png" height="40" width="32">
+                        <!-- <input type="search" class="header__input" placeholder="Search for music..."/> -->
+                    </button>
                 </div>
+                <script src="script.js" defer></script>
 
                 <nav class="header__nav">
                     <a href="/" class="header__navlink">Live</a>
