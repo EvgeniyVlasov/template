@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Last.fm | Play music, find songs, and discover artists</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body class="site" id="body">
+        <header class="header">
+            <div class="header__disk">
+                <img src="images/disc.png" height="60px" width="60px">
+            </div>
+            <div class="header__play">
+                <img src="images/play.png" height="40px" width="120px">
+                <!--
+                <ul>
+                    <li><button disabled class="play_back"></button></li>
+                    <li><button disabled class="play"></button></li>
+                    <li><button disabled class="play_forward"></button></li>
+                </ul>
+                -->
+            </div>
+            <div class="header__logo">
+                <a href="/">
+                    <img src="images/logo.png" height="42px" width="118px">
+                </a>
+            </div>
+            <div class="header__rightpart">
+                <div class="header_search">
+                    <input id="inputField"/>
+                    <button onclick="myFunc()">
+                        <img src="images/search_icon.png" height="40" width="32">
+                        <!-- <input type="search" class="header__input" placeholder="Search for music..."/> -->
+                    </button>
+                </div>
+                <script src="script.js" defer></script>
+
+                <nav class="header__nav">
+                    <a href="/" class="header__navlink">Live</a>
+                    <a href="/" class="header__navlink">Music</a>
+                    <a href="/" class="header__navlink">Charts</a>
+                    <a href="/" class="header__navlink">Events</a>
+                    <a href="/" class="header__navlink">Features</a>
+                </nav>
+
+                <ul>
+                    <li class="header__login">
+                        <a href="/" class="login_text">Log in</a>
+                    </li>
+                </ul>
+                    <button class="signup_button">
+                        <a href="/" class="signup_button_text">SIGN UP</a>
+                    </button>
+            </div>
+        </header>
+
+
+
+        <main class="body">
+            <header class="header_body">
+                <div class="header_background">
+                    <div class="header_container">
+                        <div class="header_info">
+                            <h2 class="header_info_text">Explore Top Music Powered by your Scrobbles</h2>
+                            <p class="header_info_text_p">We bring together your favourite music services and join up listening, watching and sharing to connect your musical world.</p>
+                            <p class="header_info_text_p2">Below you can visualise, in real-time, the listening habits & trends of Last.fm's global community. Go Explore.</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main_content">
+                <div class="main_container">
+                    <div class="main_dashboard_spike">
+                        <div class="widget_spike">
+                            <h2 class="spike_title">Spiking Artists</h2>
+                            <div class="spike_intro">
+                                <strong>These artists are trending globally on Last.fm right now</strong>
+                                <br>
+                                Click one to explore the artist and their similar artists
+                            </div>
+                            <div class="spike_content">
+                                <img src="images/widget_spike.png" height="280px" width="1000px">
+                            </div>
+                            <div class="spike_details">
+                                <div class="spike_name">
+                                    <a href="/" class="spike_name1">Dua Lipa</a>
+                                </div>
+                                <!--
+                                <a class="spike_back">...</a>
+                                <a class="spike_reset">Reset</a>
+                                -->
+                            </div>
+                            <div class="spike_label">
+                                <div class="label_result">
+                                    <span class="label_result_span">
+                                        <a href="\" class="spike_name2">Dua Lipa</a> - 
+                                        <a href="\" class="spike_name2">doN'T StArT nOw</a>
+                                    </span>
+                                    <div class="label_result_plays">
+                                        Plays: 14,286,668
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main_dashboard">
+                        <div class="widget_tracks">
+                            <h2 class="tracks_title">Spiking Tracks</h2>
+                            <div class="tracks_intro">
+                                <strong>The songs currently making the most waves across Last.fm worldwide</strong>
+                            </div>
+                            <div class="tracks_content">
+                                <img src="images/widget_tracks.png" height="304px" width="430px">
+                            </div>
+                        </div>
+
+                        <div class="widget_alltime">
+                            <h2 class="tracks_title">All Time Scrobbles</h2>
+                            <div class="tracks_intro">
+                                <strong>
+                                    A live global counter showing the total number of tracks listened to by Last.fm users since 2003
+                                </strong>
+                            </div>
+                            <div class="alltime_wrap">
+                                <div class="alltime_content">
+                                    <img src="images/widget_alltime.png" height="80px" width="430px">
+                                </div>
+                                <div class="alltime_genrewrap">
+                                    Last fm is 
+                                    <span class="alltime_genre">
+                                        <a href="\" class="alltime_genre_text">...</a>
+                                    </span>
+                                </div>
+                            </div>
+                            
+                            <div class="spike_label">
+                                <div class="label_result">
+                                    <span class="label_result_span">
+                                        <a href="\" class="spike_name2">Sigur Rós</a> - 
+                                        <a href="\" class="spike_name2">Untitled #3 (Samskeyti)</a>
+                                    </span>
+                                    <div class="label_result_plays">
+                                        Plays: 220,181
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget_world">
+                            <h2 class="tracks_title">Around The World</h2>
+                            <div class="tracks_intro">
+                                <strong>
+                                    What's being listened to right now and where? How popular is that track across the globe?
+                                </strong>
+                                <br>
+                                Select a country to explore worldwide listening trends
+                            </div>
+                            <div class="world_wrap">
+                                <div class="world_content">
+                                    <img src="images/widget_world.png" height="216px" width="430px">
+                                </div>
+                            </div>
+                            
+                            <div class="spike_label">
+                                <div class="label_result">
+                                    <span class="label_result_span">
+                                        <a href="\" class="spike_name2">Epoch of Unlight</a> - 
+                                        <a href="\" class="spike_name2">The Anthropocene</a>
+                                    </span>
+                                    <div class="label_result_plays">
+                                        Plays: 20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget_loved">
+                            <h2 class="tracks_title">Today's Most Loved</h2>
+                            <div class="tracks_intro">
+                                <strong>
+                                    Tracks loved by the most listeners
+                                </strong>
+                                <br>
+                                Hit play to see if you love it too
+                            </div>
+                            <div class="loved_wrap">
+                                <div class="loved_content">
+                                    <a class="loved_left">
+                                        <button>Previous</button>
+                                    </a>
+                                    <img class="loved_circle" src="images/widget_loved.png" height="256px" width="256px">
+                                    <a class="loved_right">
+                                        <button>Next</button>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="spike_label">
+                                <div class="label_result">
+                                    <span class="label_result_span">
+                                        <a href="\" class="spike_name2">Billie Eilish</a> - 
+                                        <a href="\" class="spike_name2">Happier Than Ever</a>
+                                    </span>
+                                    <div class="label_result_plays">
+                                        Plays: 12,094,599
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget_harris">
+                            <h2 class="tracks_title">Cal<span class="red">venn</span> Harris</h2>
+                            <div class="tracks_intro">
+                                <strong>
+                                    Want to hear some 80s Electronic? How about some millennial Metal?
+                                </strong>
+                                <br>
+                                Drag the circles to explore various sounds from different eras
+                            </div>
+                            <div class="harris_wrap">
+                                <div class="harris_content">
+                                    <img src="images/widget_harris.png" height="280px" width="430px">
+                                </div>
+                            </div>
+                            
+                            <div class="spike_label">
+                                <div class="label_result">
+                                    <span class="label_result_span">
+                                        <div class="spike_name">
+                                            You're ahead of your time! Try a different combination
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav_pics">
+                        <div class="nav_pics_container">
+                            <ul class="nav_pics_ul">
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            Shaky Knees '21 - our photo recap
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/92d9124ba206daf25c53890908a491b6" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            Austin City Limits'21 - our photo recap
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/9ad57cf5e1a4892aa7bd51c3be248799" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            Last.fm's 2021 Outside Lands photo recap
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/67d407cfc4e548a0a8b9c1bbc8564e32" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <!--
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            We look at the artista you should know at Outside Lands 2021
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/b3e887f4deb401e8964126b67148614b" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">SPOTLIGHT</span>
+                                        <a href="/" class="nav_pics_a">
+                                            On the rise: a Women's History Month playlist
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/47d90f08e3332ca73cfae87cf9e53ab3" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">SPOTLIGHT</span>
+                                        <a href="/" class="nav_pics_a">
+                                            Girls to the front: celebrating the sounds of Riot Grrrl
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/255a968119bb270543191cc18b6e7c1e" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            Exploring the local sounds and scenes at Noise Pop 2020
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/4b742f304bf06715402347191042d79c" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+
+                                <li class="nav_pics_li">
+                                    <p class="nav_pics_p">
+                                        <span class="nav_pics_span">FEST.FM</span>
+                                        <a href="/" class="nav_pics_a">
+                                            6 artists that blew our minds at Noise Pop Festival 2020
+                                        </a>
+                                    </p>
+                                    <div class="nav_pics_div">
+                                        <img src="https://lastfm.freetls.fastly.net/i/u/400x300/2b21a066b7877918d258920e7ab294c6" class="nav_pics_img" height="230px" width="400px">
+                                    </div>
+                                    <a href="/" class="nav_pics_a"></a>
+                                </li>
+                                -->
+
+                            </ul>
+
+                        <!--
+                        <button class="nav_pics_prev">
+                            <span class="arrow">
+                                Previous
+                            </span>
+                        </button>
+                        <button class="nav_pics_next">
+                            <span class="arrow">
+                                Next
+                            </span>
+                        </button>
+                        -->
+
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <footer class="footer">
+            <div class="foot_top">
+                <div class="foot_top_container">
+                    <div class="foot_top_row">
+                        
+                        <div class="foot_top_col">
+                            <h2 class="foot_top_head">
+                                COMPANY
+                            </h2>
+                            <ul class="foot_top_links">
+                                <li><a href="/" class="foot_top_link">About Last.fm</a></li>
+                                <li><a href="/" class="foot_top_link">Contact Us</a></li>
+                                <li><a href="/" class="foot_top_link">Jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_top_col">
+                            <h2 class="foot_top_head">
+                                HELP
+                            </h2>
+                            <ul class="foot_top_links">
+                                <li><a href="/" class="foot_top_link">Track My Music</a></li>
+                                <li><a href="/" class="foot_top_link">Community Support</a></li>
+                                <li><a href="/" class="foot_top_link">Community Guidelines</a></li>
+                                <li><a href="/" class="foot_top_link">Help</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_top_col">
+                            <h2 class="foot_top_head">
+                                GOODIES
+                            </h2>
+                            <ul class="foot_top_links">
+                                <li><a href="/" class="foot_top_link">Download Scrobbler</a></li>
+                                <li><a href="/" class="foot_top_link">Developer API</a></li>
+                                <li><a href="/" class="foot_top_link">Free Music Downloads</a></li>
+                                <li><a href="/" class="foot_top_link">Merchandise</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_top_col">
+                            <h2 class="foot_top_head">
+                                ACCOUNT
+                            </h2>
+                            <ul class="foot_top_links">
+                                <li><a href="/" class="foot_top_link">About Last.fm</a></li>
+                                <li><a href="/" class="foot_top_link">Contact Us</a></li>
+                                <li><a href="/" class="foot_top_link">Jobs</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_top_col">
+                            <h2 class="foot_top_head">
+                                FOLLOW US
+                            </h2>
+                            <ul class="foot_top_links">
+                                <li><a href="/" class="foot_top_link">Facebook</a></li>
+                                <li><a href="/" class="foot_top_link">Twitter</a></li>
+                                <li><a href="/" class="foot_top_link">Instagram</a></li>
+                                <li><a href="/" class="foot_top_link">YouTube</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot_btm">
+                <div class="foot_top_container">
+                    <div class="foot_btm_row">
+                        <div class="foot_btm_col">
+                            <ul class="foot_btm_links">
+                                <li>English</li>
+                                <li><a href="/" class="foot_btm_link">Deutsch</a></li>
+                                <li><a href="/" class="foot_btm_link">Español</a></li>
+                                <li><a href="/" class="foot_btm_link">Français</a></li>
+                                <li><a href="/" class="foot_btm_link">Italiano</a></li>
+                                <li><a href="/" class="foot_btm_link">日本語</a></li>
+                                <li><a href="/" class="foot_btm_link">Polski</a></li>
+                                <li><a href="/" class="foot_btm_link">Português</a></li>
+                                <li><a href="/" class="foot_btm_link">Русский</a></li>
+                                <li><a href="/" class="foot_btm_link">Svenska</a></li>
+                                <li><a href="/" class="foot_btm_link">Türkçe</a></li>
+                                <li><a href="/" class="foot_btm_link">简体中文</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_btm_logo">
+                            <p>Audioscrobbler</p>
+                            <img src="https://www.last.fm/static/images/footer_logo@2x.49ca51948b0a.png" width="37px" height="20px">
+                        </div>
+
+                        <p class="foot_btm_p">
+                            <span>Time Zone: <strong class="foot_btm_p_strong">Europe/Moskow</strong></span>
+                        </p>
+
+                        <div class="foot_btm_btm">
+                            <ul class="foot_btm_links">
+                                <li><a href="/" class="foot_btm_link1">CBS Interactive</a></li>
+                                <li class="foot_btm_links_not_link">© 2022 Last.fm Ltd. All rights reserved</li>
+                                <li><a href="/" class="foot_btm_link1">Terms of Use</a></li>
+                                <li><a href="/" class="foot_btm_link1">Privacy Policy</a></li>
+                                <li><a href="/" class="foot_btm_link1">Legal Policies</a></li>
+                                <li><a href="/" class="foot_btm_link1">Cookies Policy</a></li>
+                                <li><a href="/" class="foot_btm_link1">Cookie Information</a></li>
+                                <li><a href="/" class="foot_btm_link1">Jobs at ViacomCBS</a></li>
+                                <li><a href="/" class="foot_btm_link1">Last.fm Music</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>
