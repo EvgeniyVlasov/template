@@ -29,9 +29,9 @@ function Header() {
       <div className="header_body">
         <Controls />
 
-        <Link className="logo link" to="/search">
+        <a className="header_logo" href="#">
           <img className="logo_img" src="/img/LastFM_logo.png" alt="Home" />
-        </Link>
+        </a>
 
         <Navigation onStateFormChange={handleShowForm} />
 
