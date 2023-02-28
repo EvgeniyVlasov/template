@@ -33,9 +33,10 @@ html,body {
 
 
 
-
-
-/* Header */
+  
+  /*
+                  Header
+  */
 
 .header {
   position: fixed;
@@ -211,6 +212,11 @@ html,body {
   filter: brightness(200%);
 }
 
+.logo_img {
+  width: 120%;
+  padding-top: 15px;
+}
+
 @media (max-width:1140px) {
   .wrapper {
     width: 100%;
@@ -265,7 +271,7 @@ html,body {
   .logo_link {
     margin-top: 50px;
   }
-  .logo_img {
+  .header_logo {
     margin-right: 50px;
   }
 }
@@ -273,7 +279,7 @@ html,body {
 
 
   /*
-                  Main
+                  Music
   */
   
   .main {
