@@ -211,6 +211,12 @@ html,body {
   filter: brightness(200%);
 }
 
+.logo_img {
+  margin-right: 50px;
+  width: 80%;
+  padding-top: 15px;
+}
+
 @media (max-width:1140px) {
   .wrapper {
     width: 100%;
@@ -264,9 +270,6 @@ html,body {
   }
   .logo_link {
     margin-top: 50px;
-  }
-  .logo_img {
-    margin-right: 50px;
   }
 }
   
