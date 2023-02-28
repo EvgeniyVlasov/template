@@ -1,9 +1,9 @@
-import Track from "./Track";
-import Audio from "./Audio"
-import FormSearch from "./FormSearch";
-import HeaderBurger from "./HeaderBurger";
-import Navigation from "./Navigation";
-import Controls from "./Controls";
+import Music from "./Header_music";
+import Audio from "./Header_audio"
+import FormSearch from "./Header_form_search";
+import HeaderFolded from "./Header_folded";
+import Navigation from "./Header_nav";
+import Controls from "./Header_controls";
 
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
@@ -24,18 +24,18 @@ function Header() {
     <header className="header">
       <Audio />
 
-      <Track />
+      <Music />
 
-      <div className="header__body">
+      <div className="header_body">
         <Controls />
 
         <Link className="logo link" to="/search">
-          <img className="logo__img" src="/img/logo.png" alt="Логотип" />
+          <img className="logo_img" src="/img/LastFM_logo.png" alt="Home" />
         </Link>
 
         <Navigation onStateFormChange={handleShowForm} />
 
-        <HeaderBurger />
+        <HeaderFolded />
       </div>
 
       <FormSearch stateForm={isShowForm} onStateFormChange={handleHideForm} />
